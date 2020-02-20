@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:background="@mipmap/wallpaper">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/userWelcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Welcome to Calorie Tracker!"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:hint="You Haven't Set Your Goals Today"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/calorieGoal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:textColorHint="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.85">
+
+    <EditText
+        android:id="@+id/inputGoal"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/input"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:hint="Set Calorie Goal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:gravity="center"/>
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_style"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="ACCEPT"
+            android:typeface="sans"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

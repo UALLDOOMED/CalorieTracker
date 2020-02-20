@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:fadeScrollbars="true"
+    android:scrollbarSize="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/login_icon" />
+
+        <EditText
+            android:id="@+id/userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/username"
+                android:clickable="false"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <ImageView
+                android:id="@+id/hidepassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/invisible"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/showpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/visible"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="First name"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/sureName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Sure name"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_date_range_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Date of Birth"
+            android:padding="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_accessibility_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Height(cm)"
+            android:maxLength="3"
+            android:padding="15dp"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_accessibility_white_24dp"
+            android:drawablePadding="10dp"
+            android:maxLength="3"
+            android:hint="Weight(kg)"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_mail_outline_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_location_on_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Address"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/postCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_domain_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Post Code"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/stepsPerMile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/username"
+            android:drawableLeft="@drawable/ic_directions_walk_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Steps Per Mile"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white" />
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:textColorHint="@color/white"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_male"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_female"
+                android:textColor="@color/white"
+                android:buttonTint="@color/white"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/LOA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Level of Activity"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="43dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+        <Spinner
+            android:id="@+id/LOA_spinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/LOA"
+            android:theme="@style/AppTheme.Spinner"
+            android:popupBackground="@color/white"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/loginbtn"
+            android:padding="15dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="Sign up"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Already a member? Login"
+            android:textColor="@color/white"
+            android:textSize="16dip" />
+
+
+    </LinearLayout>
+</ScrollView>
